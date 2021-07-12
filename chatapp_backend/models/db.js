@@ -1,6 +1,6 @@
 //local
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/chatApp', {useNewUrlParser: true, useUnifiedTopology: true},
+mongoose.connect('mongodb://localhost:27017/chatApp', {useUnifiedTopology: true, useCreateIndex: true, useNewUrlParser: true},
 err =>{
     if(!err){
         console.log("Connected successfully to Mongod server")
